@@ -1,0 +1,12 @@
+
+public class TrafficLightDemo {
+	public static void main (String[] atgs) throws InterruptedException{
+		
+		TrafficLight a = new TrafficLight();
+		for(int i = 1; i <= 10;i++){
+			System.out.println(""+i+""+a.toString());
+			Thread.sleep(2000);
+			a.change();
+		}
+	}
+}
