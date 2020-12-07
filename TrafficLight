@@ -1,0 +1,37 @@
+
+public class TrafficLight {
+	private String color;
+	
+	public TrafficLight(){
+		color = "red";
+	}
+	
+	public void setColor(String newC){
+		this.color = newC;
+	}
+	
+	public String getColor(){
+		
+		return color;
+	}
+	
+	public void change(){
+		if(this.color.equals("red")){
+			this.color = "green";
+		}
+		else if(this.color.equals("green")){
+			this.color = "yellow";
+		}
+		else if(this.color.equals("yellow")){
+			this.color = "red";
+		}
+	}
+	
+	public String toString(){
+		String s;
+		
+		s = ""+this.color;
+		
+		return s;
+	}
+}
